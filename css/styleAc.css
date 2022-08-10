@@ -1,0 +1,61 @@
+body{
+  background: url(https://josuaowebblog.fr/wp-content/uploads/2021/06/briques.jpg ) no-repeat top left #000;
+  background-size: cover;
+}
+/* .card{
+  display:absolute;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 450px 200px 200px;
+  box-shadow:
+  0 0 2vw 0vw  #FDFDFD,
+  0 0 1vw  0.4vw #E7E0E0,
+
+  inset 0 0 .5vw  0.2vw #FDFDFD,
+  inset 0 0 0.2vw 0.2vw #F1EDED,
+  inset 0 0 .25vw 0.2vw #E7E0E0;
+  border-radius: 22px;
+
+} */
+
+
+
+.titre{
+      font-weight: 300;
+      font-size:4rem;
+      font-family: 'Fugaz One', cursive;
+      text-align: center;
+      color: #fff;
+      text-shadow:
+          0 0 3px #fff,
+          0 0 5px #fff,
+          0 0 42px rgb(255, 255, 255),
+          0 0 77px rgb(0, 0, 0),
+          0 0 100px rgb(0, 0, 0);
+          animation: titre 2s  infinite alternate;
+}
+
+@keyframes titre {
+ 0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow:
+    0 0 3px #fff,
+    0 0 5px #fff,
+    0 0 42px rgb(255, 255, 255),
+    0 0 77px rgb(0, 0, 0),
+    0 0 100px rgb(0, 0, 0);
+ }
+   20%, 24%, 55% {
+     text-shadow:none;
+   }
+}
+.image {
+    margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+    transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+    display: flex;
+    justify-content: space-evenly;
+}
+img{
+  border-radius: 50%;
+}

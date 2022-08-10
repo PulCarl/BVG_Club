@@ -1,0 +1,151 @@
+@font-face {
+  font-family:"Caveat-VariableFont_wght";
+  src:url("./font/Caveat-VariableFont_wght") format("truetype");
+}
+
+body {
+           margin: 0;
+           padding: 0;
+           background: url(https://josuaowebblog.fr/wp-content/uploads/2021/06/briques.jpg ) no-repeat top left #000;
+           background-size: cover;
+           font-family: lovelo-line-light, sans-serif;
+       }
+
+       .effetneon {
+           font-size: 6rem;
+           font-family: 'Red Rose', cursive;
+           text-align: center;
+           color: #fff;
+           text-shadow:
+               0 0 7px #fff,
+               0 0 10px #fff,
+               0 0 42px rgb(230, 18, 124),
+               0 0 77px rgb(230, 18, 124),
+               0 0 100px rgb(230, 18, 124);
+
+       }
+
+       .effetclub {
+           font-size: 3rem;
+           font-family : 'Style Script', cursif ;
+           text-align: center;
+           color: #c6e2ff;
+           text-shadow:
+            0 0 6px rgba(202,228,225,0.92),
+            0 0 30px rgba(202,228,225,0.34),
+            0 0 12px rgba(30,132,242,0.52),
+            0 0 21px rgba(30,132,242,0.92),
+            0 0 34px rgba(30,132,242,0.78),
+            0 0 54px rgba(30,132,242,0.92);
+            animation: effetclub 2s  infinite alternate;
+       }
+        @keyframes effetclub {
+         0%, 18%, 22%, 25%, 53%, 57%, 100% {
+            text-shadow:
+           0 0 6px rgba(202,228,225,0.92),
+           0 0 30px rgba(202,228,225,0.34),
+           0 0 12px rgba(30,132,242,0.52),
+           0 0 21px rgba(30,132,242,0.92),
+           0 0 34px rgba(30,132,242,0.78),
+           0 0 54px rgba(30,132,242,0.92);
+         }
+           20%, 24%, 55% {
+             text-shadow:none;
+           }
+       }
+
+  
+       .container {
+          margin-top: 25%;
+           display: flex;
+           align-items: center;
+           width: 100%;
+           height: 100%;
+           justify-content: center;
+       }
+       .containerclub {
+           display: flex;
+           align-items: center;
+           width: 100%;
+           height: 100%;
+           justify-content: center;
+
+       }
+
+       .menu{
+         display: flex;
+         align-items: center;
+         width: 100%;
+         height: 100%;
+         justify-content: center;
+       }
+       /* Bouton et animation welcome */
+       .bouton a {
+       font-size:1rem;
+       display:flex;
+      font-family: 'Red Rose', cursive;
+       text-align:center;
+       vertical-align:middle;
+       text-decoration:none;
+       color:#EEDDE0;
+        text-shadow: 0 0 30px #EC637B,
+         	0 0 10px rgba(230, 161, 173, 0.41),
+       		0 0 100px #E6A1AD,
+       		0 0 500px #F36780,
+       		5px 9px 5px rgba(0, 0, 0, 0.5);
+       float:left;
+       margin:20px;
+       margin-top:200px;
+
+
+       }
+       @-webkit-keyframes clignote {
+       0%{
+           color: rgba(46, 46, 46, 0.61);
+       	text-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
+         }
+       10%{
+          color:#EEDDE0;
+           text-shadow: 0 0 30px #EC637B,
+       		0 0 10px rgba(230, 161, 173, 0.41),
+       		0 0 100px #E6A1AD,
+       		0 0 500px #F36780,
+       		5px 9px 5px rgba(0, 0, 0, 0.5);
+         }
+       12%{
+           color: rgba(46, 46, 46, 0.61);
+       	text-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
+         }
+       15%{
+           color:#EEDDE0;
+           text-shadow: 0 0 30px #EC637B,
+       		0 0 10px rgba(230, 161, 173, 0.41),
+       		0 0 100px #E6A1AD,
+       		0 0 500px #F36780,
+       		5px 9px 5px rgba(0, 0, 0, 0.5);
+         }
+        25%{
+           color: rgba(46, 46, 46, 0.61);
+       	text-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
+         }
+        30%{
+           color:#EEDDE0;
+           text-shadow: 0 0 30px #EC637B,
+       		0 0 10px rgba(230, 161, 173, 0.41),
+       		0 0 100px #E6A1AD,
+       		0 0 500px #F36780,
+       		5px 9px 5px rgba(0, 0, 0, 0.5);
+         }
+       45%{
+           color: rgba(46, 46, 46, 0.61);
+       	text-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
+         }
+       }
+
+       .bouton a:hover{
+         color: rgba(46, 46, 46, 0.61);
+       	text-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
+       -webkit-animation-name: clignote; /*nom de l'animation*/
+       -webkit-animation-duration: 2s; /*durée de l'animation*/
+       -webkit-animation-iteration-count:1; /*nombre de repétition de l'animation*/
+       }
